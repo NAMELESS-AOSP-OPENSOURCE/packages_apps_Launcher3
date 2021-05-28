@@ -102,4 +102,8 @@
 
     <!-- Font size -->
     <string name="font_size_title">Font size</string>
+
+    <!-- App label lines -->
+    <string name="icon_multi_lines_title">Multi-lines label</string>
+    <string name="icon_multi_lines_summary">Allow icon labels to be displayed in multiple lines</string>
 </resources>

@@ -43,6 +43,13 @@
         android:title="@string/icon_pack_title" />
 
     <com.android.settings.custom.preference.SwitchPreference
+        android:key="pref_multi_lines"
+        android:title="@string/icon_multi_lines_title"
+        android:summary="@string/icon_multi_lines_summary"
+        android:persistent="true"
+        android:defaultValue="false" />
+
+    <com.android.settings.custom.preference.SwitchPreference
         android:key="themed_icons"
         android:title="@string/themed_icons_title"
         android:summary="@string/themed_icons_summary"
