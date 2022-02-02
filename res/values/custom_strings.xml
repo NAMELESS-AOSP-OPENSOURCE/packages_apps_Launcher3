@@ -65,4 +65,9 @@
     <string name="home_misc_summary">Discover more miracle</string>
     <string name="developer_options_title">Developer Options</string>
     <string name="developer_options_summary">Enable hidden features as your own risk</string>
+
+    <!-- Hotseat searchbar -->
+    <string name="label_search">Search</string>
+    <string name="label_lens">Google Lens</string>
+    <string name="label_voice_search">Voice search</string>
 </resources>
