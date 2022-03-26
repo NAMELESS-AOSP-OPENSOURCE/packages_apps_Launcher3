@@ -13,4 +13,7 @@
 
 <resources>
     <dimen name="theme_icon_size">24dp</dimen>
+
+    <!-- Search box radius -->
+    <dimen name="bg_searchbox_radius">58dp</dimen>
 </resources>
