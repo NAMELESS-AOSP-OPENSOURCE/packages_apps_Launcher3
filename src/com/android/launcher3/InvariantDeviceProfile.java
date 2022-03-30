@@ -98,6 +98,7 @@ public class InvariantDeviceProfile implements SharedPreferences.OnSharedPrefere
     public static final String KEY_ICON_SIZE = "pref_custom_icon_size";
     public static final String KEY_FONT_SIZE = "pref_custom_font_size";
     public static final String KEY_MULTI_LINES = "pref_multi_lines";
+    public static final String KEY_ALLAPPS_THEMED_ICONS = "pref_allapps_themed_icons";
 
     // Constants that affects the interpolation curve between statically defined device profile
     // buckets.
@@ -249,6 +250,7 @@ public class InvariantDeviceProfile implements SharedPreferences.OnSharedPrefere
             case KEY_ICON_SIZE:
             case KEY_FONT_SIZE:
             case KEY_MULTI_LINES:
+            case KEY_ALLAPPS_THEMED_ICONS:
                 onConfigChanged(mContext);
                 break;
         }

@@ -55,4 +55,11 @@
         android:summary="@string/themed_icons_summary"
         android:defaultValue="false" />
 
+    <com.android.settings.custom.preference.SwitchPreference
+        android:key="pref_allapps_themed_icons"
+        android:title="@string/themed_icons_all_title"
+        android:summary="@string/themed_icons_all_summary"
+        android:defaultValue="false"
+        android:dependency="themed_icons" />
+
 </androidx.preference.PreferenceScreen>
