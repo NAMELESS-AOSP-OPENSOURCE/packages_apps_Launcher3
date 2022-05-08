@@ -28,7 +28,7 @@
       LAUNCHER_ADD_NEW_APPS_TO_HOME_SCREEN_ENABLED(613)
       LAUNCHER_ADD_NEW_APPS_TO_HOME_SCREEN_DISABLED(614)
     -->
-    <SwitchPreference
+    <com.android.settings.custom.preference.SwitchPreference
         android:key="pref_add_icon_to_home"
         android:title="@string/auto_add_shortcuts_label"
         android:summary="@string/auto_add_shortcuts_description"
@@ -41,7 +41,7 @@
       LAUNCHER_HOME_SCREEN_ROTATION_ENABLED(615)
       LAUNCHER_HOME_SCREEN_ROTATION_DISABLED(616)
     -->
-    <SwitchPreference
+    <com.android.settings.custom.preference.SwitchPreference
         android:key="pref_allowRotation"
         android:title="@string/allow_rotation_title"
         android:summary="@string/allow_rotation_desc"
@@ -55,12 +55,12 @@
         android:title="@string/pref_allow_phone_taskbar"
         android:summary="@string/pref_allow_phone_taskbar_desc" />
 
-    <SwitchPreference
+    <com.android.settings.custom.preference.SwitchPreference
         android:key="pref_allow_phone_overview_grid"
         android:title="@string/pref_allow_phone_overview_grid"
         android:summary="@string/pref_allow_phone_overview_grid_desc" />
 
-    <SwitchPreference
+    <com.android.settings.custom.preference.SwitchPreference
         android:defaultValue="true"
         android:key="pref_enable_minus_one"
         android:summary="@string/pref_show_google_now_summary"
