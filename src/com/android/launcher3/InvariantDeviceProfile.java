@@ -31,9 +31,14 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.content.res.XmlResourceParser;
+import android.database.ContentObserver;
 import android.graphics.Point;
 import android.graphics.PointF;
 import android.graphics.Rect;
+import android.net.Uri;
+import android.os.Handler;
+import android.os.Looper;
+import android.provider.Settings;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
@@ -171,6 +176,30 @@ public class InvariantDeviceProfile implements SharedPreferences.OnSharedPrefere
     private final ArrayList<OnIDPChangeListener> mChangeListeners = new ArrayList<>();
     private Context mContext;
 
+    private static final Uri ENABLE_TASKBAR_URI = Settings.System.getUriFor(
+            Settings.System.ENABLE_TASKBAR);
+
+    private final class SettingsContentObserver extends ContentObserver {
+        SettingsContentObserver() {
+            super(new Handler(Looper.getMainLooper()));
+        }
+
+        @Override
+        public void onChange(boolean selfChange, Uri uri) {
+            if (ENABLE_TASKBAR_URI.equals(uri)) {
+                // Create the illusion of this taking effect immediately
+                // Also needed because TaskbarManager inits before SystemUiProxy on start
+                boolean enabled = Settings.System.getInt(mContext.getContentResolver(),
+                        Settings.System.ENABLE_TASKBAR, 0) == 1;
+                SystemUiProxy.INSTANCE.get(mContext).setTaskbarEnabled(enabled);
+
+                onConfigChanged(mContext, true);
+            }
+        }
+    }
+
+    private final SettingsContentObserver mSettingsObserver = new SettingsContentObserver();
+
     @VisibleForTesting
     public InvariantDeviceProfile() {
     }
@@ -192,19 +221,14 @@ public class InvariantDeviceProfile implements SharedPreferences.OnSharedPrefere
                 });
 
         mContext = context;
+        mContext.getContentResolver().registerContentObserver(ENABLE_TASKBAR_URI,
+                false, mSettingsObserver);
         Utilities.getPrefs(context).registerOnSharedPreferenceChangeListener(this);
     }
 
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-        if (DeviceProfile.KEY_PHONE_TASKBAR.equals(key)) {
-            // Create the illusion of this taking effect immediately
-            // Also needed because TaskbarManager inits before SystemUiProxy on start
-            boolean enabled = Utilities.getPrefs(mContext).getBoolean(DeviceProfile.KEY_PHONE_TASKBAR, false);
-            SystemUiProxy.INSTANCE.get(mContext).setTaskbarEnabled(enabled);
-
-            onConfigChanged(mContext, true);
-        } else if (DeviceProfile.KEY_PHONE_OVERVIEW_GRID.equals(key)) {
+        if (DeviceProfile.KEY_PHONE_OVERVIEW_GRID.equals(key)) {
             onConfigChanged(mContext, false);
         }
     }
