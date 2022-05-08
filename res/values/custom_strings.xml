@@ -83,4 +83,8 @@
     <string name="haptic_on_scroll_summary">Do haptic feedback when scrolling recent view</string>
     <string name="recent_show_lens_title">Show Lens</string>
     <string name="recent_show_lens_summary">When app is available</string>
+
+    <!-- Themed icons -->
+    <string name="themed_icons_title">Themed icon</string>
+    <string name="themed_icons_summary">Enable themed icon for Homescreen apps</string>
 </resources>

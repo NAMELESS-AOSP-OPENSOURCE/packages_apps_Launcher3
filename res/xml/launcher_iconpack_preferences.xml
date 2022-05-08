@@ -19,4 +19,10 @@
     xmlns:launcher="http://schemas.android.com/apk/res-auto"
     android:title="@string/home_icon_title">
 
+    <com.android.settings.custom.preference.SwitchPreference
+        android:key="themed_icons"
+        android:title="@string/themed_icons_title"
+        android:summary="@string/themed_icons_summary"
+        android:defaultValue="false" />
+
 </androidx.preference.PreferenceScreen>
