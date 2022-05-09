@@ -69,6 +69,7 @@ import android.annotation.TargetApi;
 import android.app.ActivityManager.RunningTaskInfo;
 import android.content.Context;
 import android.content.LocusId;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.graphics.BlendMode;
 import android.graphics.Canvas;
@@ -193,7 +194,8 @@ import java.util.function.Consumer;
 public abstract class RecentsView<ACTIVITY_TYPE extends StatefulActivity<STATE_TYPE>,
         STATE_TYPE extends BaseState<STATE_TYPE>> extends PagedView implements Insettable,
         TaskThumbnailCache.HighResLoadingState.HighResLoadingStateChangedCallback,
-        TaskVisualsChangeListener, SplitScreenBounds.OnChangeListener {
+        TaskVisualsChangeListener, SplitScreenBounds.OnChangeListener,
+        SharedPreferences.OnSharedPreferenceChangeListener {
 
     private static final String TAG = "RecentsView";
     private static final boolean DEBUG = false;
@@ -262,6 +264,9 @@ public abstract class RecentsView<ACTIVITY_TYPE extends StatefulActivity<STATE_T
     public static final float SCROLL_VIBRATION_PRIMITIVE_SCALE = 0.6f;
     public static final VibrationEffect SCROLL_VIBRATION_FALLBACK =
             VibratorWrapper.EFFECT_TEXTURE_TICK;
+
+    private static final String KEY_HAPTIC_ON_SCROLL = "pref_allow_recent_haptic";
+    private boolean mShouldVibrate;
 
     /**
      * Can be used to tint the color of the RecentsView to simulate a scrim that can views
@@ -473,6 +478,14 @@ public abstract class RecentsView<ACTIVITY_TYPE extends StatefulActivity<STATE_T
 
     private int mOverScrollShift = 0;
     private long mScrollLastHapticTimestamp;
+
+    @Override
+    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+        if (KEY_HAPTIC_ON_SCROLL.equals(key)) {
+            SharedPreferences prefs = Utilities.getPrefs(mContext);
+            mShouldVibrate = prefs.getBoolean(KEY_HAPTIC_ON_SCROLL, true);
+        }
+    }
 
     /**
      * TODO: Call reloadIdNeeded in onTaskStackChanged.
@@ -721,6 +734,10 @@ public abstract class RecentsView<ACTIVITY_TYPE extends StatefulActivity<STATE_T
         mActivity.getViewCache().setCacheSize(R.layout.digital_wellbeing_toast, 5);
 
         mTintingColor = getForegroundScrimDimColor(context);
+
+        SharedPreferences prefs = Utilities.getPrefs(context);
+        prefs.registerOnSharedPreferenceChangeListener(this);
+        mShouldVibrate = prefs.getBoolean(KEY_HAPTIC_ON_SCROLL, true);
     }
 
     public OverScroller getScroller() {
@@ -1301,6 +1318,7 @@ public abstract class RecentsView<ACTIVITY_TYPE extends StatefulActivity<STATE_T
     }
 
     private void vibrateForScroll() {
+        if (!mShouldVibrate) return;
         long now = SystemClock.uptimeMillis();
         if (now - mScrollLastHapticTimestamp > mScrollHapticMinGapMillis) {
             mScrollLastHapticTimestamp = now;

@@ -79,4 +79,6 @@
 
     <!-- Recents -->
     <string name="action_lens">Lens</string>
+    <string name="haptic_on_scroll_title">Haptic feedback</string>
+    <string name="haptic_on_scroll_summary">Do haptic feedback when scrolling recent view</string>
 </resources>

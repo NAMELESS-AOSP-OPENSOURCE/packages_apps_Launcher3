@@ -20,6 +20,12 @@
     android:title="@string/home_recent_title">
 
     <com.android.settings.custom.preference.SwitchPreference
+        android:key="pref_allow_recent_haptic"
+        android:title="@string/haptic_on_scroll_title"
+        android:summary="@string/haptic_on_scroll_summary"
+        android:defaultValue="true" />
+
+    <com.android.settings.custom.preference.SwitchPreference
         android:key="pref_allow_phone_overview_grid"
         android:title="@string/pref_allow_phone_overview_grid"
         android:summary="@string/pref_allow_phone_overview_grid_desc" />
