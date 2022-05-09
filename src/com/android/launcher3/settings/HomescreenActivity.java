@@ -180,12 +180,9 @@ public class HomescreenActivity extends CollapsingToolbarBaseActivity
             setPreferencesFromResource(R.xml.launcher_homescreen_preferences, rootKey);
 
             PreferenceScreen screen = getPreferenceScreen();
-            for (int i = screen.getPreferenceCount() - 1; i >= 0; i--) {
-                Preference preference = screen.getPreference(i);
-                if (!initPreference(preference)) {
-                    screen.removePreference(preference);
-                }
-            }
+            mShowGoogleAppPref = screen.findPreference(KEY_MINUS_ONE);
+            mShowGoogleBarPref = screen.findPreference(Utilities.KEY_DOCK_SEARCH);
+            updateIsGoogleAppEnabled();
 
             if (getActivity() != null && !TextUtils.isEmpty(getPreferenceScreen().getTitle())) {
                 getActivity().setTitle(getPreferenceScreen().getTitle());
@@ -215,29 +212,6 @@ public class HomescreenActivity extends CollapsingToolbarBaseActivity
 
         protected String getParentKeyForPref(String key) {
             return null;
-        }
-
-        /**
-         * Initializes a preference. This is called for every preference. Returning false here
-         * will remove that preference from the list.
-         */
-        protected boolean initPreference(Preference preference) {
-            switch (preference.getKey()) {
-                case NOTIFICATION_DOTS_PREFERENCE_KEY:
-                    return !WidgetsModel.GO_DISABLE_NOTIFICATION_DOTS;
-
-                case KEY_MINUS_ONE:
-                    mShowGoogleAppPref = preference;
-                    updateIsGoogleAppEnabled();
-                    return true;
-
-                case Utilities.KEY_DOCK_SEARCH:
-                    mShowGoogleBarPref = preference;
-                    updateIsGoogleAppEnabled();
-                    return true;
-            }
-
-            return true;
         }
 
         private void updateIsGoogleAppEnabled() {
