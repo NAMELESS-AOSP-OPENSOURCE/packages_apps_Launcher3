@@ -17,6 +17,7 @@
 package com.android.quickstep.views;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.graphics.Rect;
 import android.util.AttributeSet;
@@ -48,7 +49,8 @@ import java.lang.annotation.RetentionPolicy;
  * View for showing action buttons in Overview
  */
 public class OverviewActionsView<T extends OverlayUICallbacks> extends FrameLayout
-        implements OnClickListener, Insettable {
+        implements OnClickListener, Insettable,
+        SharedPreferences.OnSharedPreferenceChangeListener {
 
     private final Rect mInsets = new Rect();
 
@@ -83,8 +85,13 @@ public class OverviewActionsView<T extends OverlayUICallbacks> extends FrameLayo
     private static final int INDEX_FULLSCREEN_ALPHA = 2;
     private static final int INDEX_HIDDEN_FLAGS_ALPHA = 3;
 
+    private static final String KEY_SHOW_LENS = "pref_show_lens";
+
     private final MultiValueAlpha mMultiValueAlpha;
     private Button mSplitButton;
+
+    private Context mContext;
+    private boolean mShowLens;
 
     @ActionsHiddenFlags
     private int mHiddenFlags;
@@ -110,6 +117,11 @@ public class OverviewActionsView<T extends OverlayUICallbacks> extends FrameLayo
         super(context, attrs, defStyleAttr, 0);
         mMultiValueAlpha = new MultiValueAlpha(this, 5);
         mMultiValueAlpha.setUpdateVisibility(true);
+
+        mContext = context;
+        SharedPreferences prefs = Utilities.getPrefs(context);
+        prefs.registerOnSharedPreferenceChangeListener(this);
+        mShowLens = prefs.getBoolean(KEY_SHOW_LENS, true);
     }
 
     @Override
@@ -117,7 +129,7 @@ public class OverviewActionsView<T extends OverlayUICallbacks> extends FrameLayo
         super.onFinishInflate();
         findViewById(R.id.action_screenshot).setOnClickListener(this);
         findViewById(R.id.action_clear_all).setOnClickListener(this);
-        if (Utilities.isGSAEnabled(getContext())) {
+        if (Utilities.isGSAEnabled(getContext()) && mShowLens) {
             View lens = findViewById(R.id.action_lens);
             findViewById(R.id.action_lens).setOnClickListener(this);
             lens.setVisibility(VISIBLE);
@@ -126,6 +138,23 @@ public class OverviewActionsView<T extends OverlayUICallbacks> extends FrameLayo
 
         mSplitButton = findViewById(R.id.action_split);
         mSplitButton.setOnClickListener(this);
+    }
+
+    @Override
+    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+        if (KEY_SHOW_LENS.equals(key)) {
+            SharedPreferences prefs = Utilities.getPrefs(mContext);
+            mShowLens = prefs.getBoolean(KEY_SHOW_LENS, true);
+            View lens = findViewById(R.id.action_lens);
+            if (Utilities.isGSAEnabled(mContext) && mShowLens) {
+                findViewById(R.id.action_lens).setOnClickListener(this);
+                lens.setVisibility(VISIBLE);
+                findViewById(R.id.lens_space).setVisibility(VISIBLE);
+            } else {
+                lens.setVisibility(GONE);
+                findViewById(R.id.lens_space).setVisibility(GONE);
+            }
+        }
     }
 
     /**
