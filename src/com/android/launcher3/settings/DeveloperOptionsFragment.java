@@ -113,7 +113,7 @@ public class DeveloperOptionsFragment extends PreferenceFragmentCompat {
         addOnboardingPrefsCatergory();
 
         if (getActivity() != null) {
-            getActivity().setTitle("Developer Options");
+            getActivity().setTitle(getString(R.string.developer_options_title));
         }
     }
 
