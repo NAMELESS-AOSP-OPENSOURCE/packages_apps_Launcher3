@@ -106,4 +106,8 @@
     <!-- App label lines -->
     <string name="icon_multi_lines_title">Multi-lines label</string>
     <string name="icon_multi_lines_summary">Allow icon labels to be displayed in multiple lines</string>
+
+    <!-- Hidden apps -->
+    <string name="hidden_app_title">Hidden apps</string>
+    <string name="hidden_app_summary">Hide apps from the app drawer</string>
 </resources>
