@@ -74,6 +74,8 @@
     <!-- Themed icons -->
     <string name="themed_icons_title">Themed icon</string>
     <string name="themed_icons_summary">Enable themed icon for Homescreen apps</string>
+    <string name="themed_icons_all_title">Enable for all icons</string>
+    <string name="themed_icons_all_summary">Apply themed icon to both App Drawer &amp; Homescreen</string>
     <!-- Icon pack -->
     <string name="icon_pack_title">Icon pack</string>
     <string name="icon_pack_default_label">Default</string>

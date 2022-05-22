@@ -74,6 +74,8 @@
     <!-- Themed icons -->
     <string name="themed_icons_title">Тематическая иконка</string>
     <string name="themed_icons_summary">Включить тематические иконки для приложений на домашнем экране</string>
+    <string name="themed_icons_all_title">Включить для всех иконок</string>
+    <string name="themed_icons_all_summary">Примените тематический значок как к приложению &amp; так и к домашнему экрану</string>
     <!-- Icon pack -->
     <string name="icon_pack_title">Набор значков</string>
     <string name="icon_pack_default_label">По умолчанию</string>

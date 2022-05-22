@@ -74,6 +74,8 @@
     <!-- Themed icons -->
     <string name="themed_icons_title">主题图标</string>
     <string name="themed_icons_summary">为主屏幕应用启用主题图标</string>
+    <string name="themed_icons_all_title">为所有应用启用</string>
+    <string name="themed_icons_all_summary">为主屏幕和应用抽屉应用同时启用主题图标</string>
     <!-- Icon pack -->
     <string name="icon_pack_title">图标包</string>
     <string name="icon_pack_default_label">默认</string>

@@ -74,6 +74,8 @@
     <!-- Themed icons -->
     <string name="themed_icons_title">圖示套用主題色</string>
     <string name="themed_icons_summary">為主畫面的應用程式啟用主題圖示</string>
+    <string name="themed_icons_all_title">啟用所有圖標</string>
+    <string name="themed_icons_all_summary">將主題圖標應用到應用程式列表&amp; 主畫面</string>
     <!-- Icon pack -->
     <string name="icon_pack_title">圖示包</string>
     <string name="icon_pack_default_label">預設</string>

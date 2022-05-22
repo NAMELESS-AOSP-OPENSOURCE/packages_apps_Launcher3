@@ -74,6 +74,8 @@
     <!-- Themed icons -->
     <string name="themed_icons_title">Temalı simge</string>
     <string name="themed_icons_summary">Ana ekran uygulamaları için temalı simgeyi etkinleştir</string>
+    <string name="themed_icons_all_title">Tüm simgeler için etkinleştir</string>
+    <string name="themed_icons_all_summary">Temalı simgeyi hem uygulama çekmesine hem ana ekrana uygula</string>
     <!-- Icon pack -->
     <string name="icon_pack_title">Simge paketi</string>
     <string name="icon_pack_default_label">Varsayılan</string>

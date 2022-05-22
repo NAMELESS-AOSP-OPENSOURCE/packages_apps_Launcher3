@@ -74,6 +74,8 @@
     <!-- Themed icons -->
     <string name="themed_icons_title">Ícones personalizados</string>
     <string name="themed_icons_summary">Ativar ícones personalizados para os atalhos na tela inicial</string>
+    <string name="themed_icons_all_title">Ativar para todos os ícones</string>
+    <string name="themed_icons_all_summary">Ativar ícones tematizados para o tela de aplicativos e para a tela inicial</string>
     <!-- Icon pack -->
     <string name="icon_pack_title">Pacote de ícones</string>
     <string name="icon_pack_default_label">Padrão</string>
