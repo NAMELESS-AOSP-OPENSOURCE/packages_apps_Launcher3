@@ -18,78 +18,81 @@
 -->
 <resources>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
-    <string name="title_show_google_app">Swipe to access Google app</string>
+    <string name="title_show_google_app">Проведіть пальцем для доступу до програми Google</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_left">When you swipe left from main Home screen</string>
+    <string name="msg_minus_one_on_left">Коли ви проводите пальцем вліво від головного екрану</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_right">When you swipe right from main Home screen</string>
-    <string name="pref_suggestions_title">Suggestions</string>
-    <string name="pref_suggestions_summary">For all apps and Home screen</string>
-    <string name="pref_allow_phone_taskbar">Force enable taskbar</string>
-    <string name="pref_allow_phone_taskbar_desc">For opening and switching apps anywhere</string>
-    <string name="pref_allow_phone_overview_grid">Show grid of recent apps</string>
-    <string name="pref_allow_phone_overview_grid_desc">More recent apps in Overview</string>
+    <string name="msg_minus_one_on_right">Коли ви проводите пальцем вправо від головного екрану</string>
+    <string name="pref_suggestions_title">Пропозиції</string>
+    <string name="pref_suggestions_summary">Для всіх програм та головного екрану</string>
+    <string name="pref_allow_phone_taskbar">Примусове увімкнення панелі завдань</string>
+    <string name="pref_allow_phone_taskbar_desc">Для відкриття та перемикання програм у будь-якому місці</string>
+    <string name="pref_allow_phone_overview_grid">Показувати сітку останніх програм</string>
+    <string name="pref_allow_phone_overview_grid_desc">Останні програми у розділі Огляд</string>
     <!-- Force stop shortcut -->
-    <string name="recent_task_force_stop_app">Force stop</string>
-    <string name="recents_app_force_stopped">App force stopped</string>
+    <string name="recent_task_force_stop_app">Примусова зупинка</string>
+    <string name="recents_app_force_stopped">Додаток примусово зупинено</string>
     <!-- Edit workspace -->
-    <string name="settings_lock_layout_title">Lock layout</string>
-    <string name="settings_lock_layout_summary">Forbid icons and widgets to be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
+    <string name="settings_lock_layout_title">Розташування замку</string>
+    <string name="settings_lock_layout_summary">Заборонити додавати, видаляти та переміщувати іконки та віджети на головному екрані</string>
+    <string name="settings_edit_widgets_error">Неможливо додати віджети на головний екран</string>
     <!-- Hide labels -->
-    <string name="desktop_show_labels_title">Icon label</string>
-    <string name="desktop_show_labels_summary">Show icon labels on homescreen</string>
-    <string name="drawer_show_labels_title">Icon label</string>
-    <string name="drawer_show_labels_summary">Show icon labels in app drawer</string>
+    <string name="desktop_show_labels_title">Ярлик значка</string>
+    <string name="desktop_show_labels_summary">Показувати ярлики значки на головному екрані</string>
+    <string name="drawer_show_labels_title">Ярлик значка</string>
+    <string name="drawer_show_labels_summary">Показувати ярлики значків на панелі програм</string>
     <!-- Home screen -->
-    <string name="settings_title">Settings</string>
-    <string name="home_homescreen_title">Home screen</string>
-    <string name="home_homescreen_summary">Customize your home screen</string>
-    <string name="home_drawer_title">App drawer</string>
-    <string name="home_drawer_summary">Customize your app drawer</string>
-    <string name="home_icon_title">Icons</string>
-    <string name="home_icon_summary">Customize your app icons</string>
-    <string name="home_recent_title">Recent</string>
-    <string name="home_recent_summary">Customize your recent overview</string>
-    <string name="home_misc_title">Miscellaneous</string>
-    <string name="home_misc_summary">Discover more miracle</string>
-    <string name="developer_options_title">Developer Options</string>
-    <string name="developer_options_summary">Enable hidden features as your own risk</string>
+    <string name="settings_title">Налаштування</string>
+    <string name="home_homescreen_title">Головний екран</string>
+    <string name="home_homescreen_summary">Налаштуйте свій головний екран</string>
+    <string name="home_drawer_title">Панель додатків</string>
+    <string name="home_drawer_summary">Налаштуйте свою панель додатків</string>
+    <string name="home_icon_title">Значки</string>
+    <string name="home_icon_summary">Налаштуйте свої значки додатків</string>
+    <string name="home_recent_title">Останні</string>
+    <string name="home_recent_summary">Налаштуйте огляд останніх подій</string>
+    <string name="home_misc_title">Різне</string>
+    <string name="home_misc_summary">Дізнайтесь більше про диво</string>
+    <string name="developer_options_title">Налаштування Розробника</string>
+    <string name="developer_options_summary">Включайте приховані функції на свій страх та ризик</string>
     <!-- Hotseat searchbar -->
-    <string name="label_search">Search</string>
-    <string name="label_lens">Google Lens</string>
-    <string name="label_voice_search">Voice search</string>
-    <string name="dock_category">Dock</string>
-    <string name="dock_search_title">Google search bar</string>
-    <string name="dock_search_summary">Show search bar in the bottom dock</string>
-    <string name="dock_theme_title">Themed icons</string>
-    <string name="dock_theme_summary">Use themed icons for search bar</string>
-    <string name="search_radius_title">Corner radius</string>
+    <string name="label_search">Пошук</string>
+    <string name="label_lens">Об\'єктив Google</string>
+    <string name="label_voice_search">Голосовий пошук</string>
+    <string name="dock_category">Док</string>
+    <string name="dock_search_title">Пошуковий рядок Google</string>
+    <string name="dock_search_summary">Показувати рядок пошуку в нижній частині доку</string>
+    <string name="dock_theme_title">Тематичні значки</string>
+    <string name="dock_theme_summary">Використовувати тематичні значки для пошуку</string>
+    <string name="search_radius_title">Радіус закруглення кута</string>
     <!-- Recents -->
-    <string name="action_lens">Lens</string>
-    <string name="haptic_on_scroll_title">Haptic feedback</string>
-    <string name="haptic_on_scroll_summary">Do haptic feedback when scrolling recent view</string>
-    <string name="recent_show_lens_title">Show Lens</string>
-    <string name="recent_show_lens_summary">When app is available</string>
+    <string name="action_lens">Об\'єктив</string>
+    <string name="haptic_on_scroll_title">Тактильна віддача</string>
+    <string name="haptic_on_scroll_summary">Включити тактильну віддачу під час прокручування нещодавніх програм</string>
+    <string name="recent_show_lens_title">Показати Об\'єктив</string>
+    <string name="recent_show_lens_summary">Коли додаток доступний</string>
     <!-- Themed icons -->
-    <string name="themed_icons_title">Themed icon</string>
-    <string name="themed_icons_summary">Enable themed icon for Homescreen apps</string>
-    <string name="themed_icons_all_title">Enable for all icons</string>
-    <string name="themed_icons_all_summary">Apply themed icon to both App Drawer &amp; Homescreen</string>
+    <string name="themed_icons_title">Тематичний значок</string>
+    <string name="themed_icons_summary">Увімкнути тематичні значки для додатків на головному екрані</string>
+    <string name="themed_icons_all_title">Увімкнути для всіх значків</string>
+    <string name="themed_icons_all_summary">Застосуйте тематичний значок для панелі додатків та головного екрану</string>
     <!-- Icon pack -->
-    <string name="icon_pack_title">Icon pack</string>
-    <string name="icon_pack_default_label">Default</string>
-    <string name="icon_pack_add">Install more</string>
-    <string name="icon_pack_no_market">There\'s no available app store</string>
+    <string name="icon_pack_title">Набір значків</string>
+    <string name="icon_pack_default_label">За замовчуванням</string>
+    <string name="icon_pack_add">Встановити більше</string>
+    <string name="icon_pack_no_market">Немає доступного магазину додатків</string>
     <!-- Folder titles -->
     <!-- Icon size -->
-    <string name="icon_size_title">Icon size</string>
+    <string name="icon_size_title">Розмір значка</string>
     <!-- Font size -->
-    <string name="font_size_title">Font size</string>
+    <string name="font_size_title">Розмір шрифту</string>
     <!-- App label lines -->
-    <string name="icon_multi_lines_title">Multi-lines label</string>
-    <string name="icon_multi_lines_summary">Allow icon labels to be displayed in multiple lines</string>
+    <string name="icon_multi_lines_title">Багаторядковий підпис</string>
+    <string name="icon_multi_lines_summary">Дозволити відображення підписів іконок у кілька рядків</string>
     <!-- Hidden apps -->
-    <string name="hidden_app_title">Hidden apps</string>
-    <string name="hidden_app_summary">Hide apps from the app drawer</string>
+    <string name="hidden_app_title">Приховані додатки</string>
+    <string name="hidden_app_summary">Приховані додатки з панелі додатків</string>
+    <!-- Homescreen Statusbar -->
+    <string name="show_statusbar_title">Рядок стану</string>
+    <string name="show_statusbar_summary">Показувати рядок стану на головному екрані</string>
 </resources>

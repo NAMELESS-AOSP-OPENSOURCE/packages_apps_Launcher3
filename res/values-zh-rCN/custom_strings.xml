@@ -92,4 +92,7 @@
     <!-- Hidden apps -->
     <string name="hidden_app_title">隐藏应用</string>
     <string name="hidden_app_summary">从应用抽屉中隐藏应用</string>
+    <!-- Homescreen Statusbar -->
+    <string name="show_statusbar_title">状态栏</string>
+    <string name="show_statusbar_summary">在主屏幕显示状态栏</string>
 </resources>

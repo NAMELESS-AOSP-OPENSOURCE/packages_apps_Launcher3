@@ -92,4 +92,7 @@
     <!-- Hidden apps -->
     <string name="hidden_app_title">Versteckte Anwendungen</string>
     <string name="hidden_app_summary">Ausblenden von Apps aus der App-Schublade</string>
+    <!-- Homescreen Statusbar -->
+    <string name="show_statusbar_title">Statusbar</string>
+    <string name="show_statusbar_summary">Statusleiste auf dem Startbildschirm anzeigen</string>
 </resources>

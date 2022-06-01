@@ -92,4 +92,7 @@
     <!-- Hidden apps -->
     <string name="hidden_app_title">Gizli uygulamalar</string>
     <string name="hidden_app_summary">Uygulama çekmecesinden uygulamaları gizle</string>
+    <!-- Homescreen Statusbar -->
+    <string name="show_statusbar_title">Durum çubuğu</string>
+    <string name="show_statusbar_summary">Ana ekranda durum çubuğunu göster</string>
 </resources>

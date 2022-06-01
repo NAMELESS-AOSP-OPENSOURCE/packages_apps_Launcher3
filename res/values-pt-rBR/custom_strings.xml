@@ -92,4 +92,7 @@
     <!-- Hidden apps -->
     <string name="hidden_app_title">Aplicativos ocultos</string>
     <string name="hidden_app_summary">Ocultar aplicativos da tela de aplicativos</string>
+    <!-- Homescreen Statusbar -->
+    <string name="show_statusbar_title">Barra de status</string>
+    <string name="show_statusbar_summary">Mostrar barra de status na tela inicial</string>
 </resources>

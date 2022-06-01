@@ -92,4 +92,7 @@
     <!-- Hidden apps -->
     <string name="hidden_app_title">隱藏應用程式</string>
     <string name="hidden_app_summary">從應用程式列表隱藏應用程式</string>
+    <!-- Homescreen Statusbar -->
+    <string name="show_statusbar_title">狀態欄</string>
+    <string name="show_statusbar_summary">在主畫面顯示狀態欄</string>
 </resources>

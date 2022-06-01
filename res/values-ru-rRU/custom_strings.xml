@@ -92,4 +92,7 @@
     <!-- Hidden apps -->
     <string name="hidden_app_title">Скрытые приложения</string>
     <string name="hidden_app_summary">Скрытие приложений из панели приложений</string>
+    <!-- Homescreen Statusbar -->
+    <string name="show_statusbar_title">Строка состояния</string>
+    <string name="show_statusbar_summary">Показать строку состояния на главном экране</string>
 </resources>

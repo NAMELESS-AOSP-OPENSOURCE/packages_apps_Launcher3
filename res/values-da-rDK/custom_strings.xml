@@ -92,4 +92,7 @@
     <!-- Hidden apps -->
     <string name="hidden_app_title">Hidden apps</string>
     <string name="hidden_app_summary">Hide apps from the app drawer</string>
+    <!-- Homescreen Statusbar -->
+    <string name="show_statusbar_title">Status Bar</string>
+    <string name="show_statusbar_summary">Show status bar at Home screen</string>
 </resources>

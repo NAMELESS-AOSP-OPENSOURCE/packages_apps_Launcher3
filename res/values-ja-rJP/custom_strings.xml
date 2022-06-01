@@ -92,4 +92,7 @@
     <!-- Hidden apps -->
     <string name="hidden_app_title">非表示のアプリ</string>
     <string name="hidden_app_summary">アプリドロワーからアプリを非表示にする</string>
+    <!-- Homescreen Statusbar -->
+    <string name="show_statusbar_title">ステータスバー</string>
+    <string name="show_statusbar_summary">ホーム画面にステータスバーを表示する</string>
 </resources>

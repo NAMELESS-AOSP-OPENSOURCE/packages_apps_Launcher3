@@ -18,78 +18,81 @@
 -->
 <resources>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
-    <string name="title_show_google_app">Swipe to access Google app</string>
+    <string name="title_show_google_app">Scorri per accedere al feed di Google</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_left">When you swipe left from main Home screen</string>
+    <string name="msg_minus_one_on_left">Quando scorri da sinistra nella Pagina iniziale</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_right">When you swipe right from main Home screen</string>
-    <string name="pref_suggestions_title">Suggestions</string>
-    <string name="pref_suggestions_summary">For all apps and Home screen</string>
-    <string name="pref_allow_phone_taskbar">Force enable taskbar</string>
-    <string name="pref_allow_phone_taskbar_desc">For opening and switching apps anywhere</string>
-    <string name="pref_allow_phone_overview_grid">Show grid of recent apps</string>
-    <string name="pref_allow_phone_overview_grid_desc">More recent apps in Overview</string>
+    <string name="msg_minus_one_on_right">Quando scorri da destra nella Pagina iniziale</string>
+    <string name="pref_suggestions_title">Suggerimenti</string>
+    <string name="pref_suggestions_summary">Per tutte le app e nella Pagina iniziale</string>
+    <string name="pref_allow_phone_taskbar">Forza l\'attivazione della taskbar</string>
+    <string name="pref_allow_phone_taskbar_desc">Per aprire e cambiare applicazioni ovunque</string>
+    <string name="pref_allow_phone_overview_grid">Mostra le app recenti a griglia</string>
+    <string name="pref_allow_phone_overview_grid_desc">Mostra le app recenti in anteprime</string>
     <!-- Force stop shortcut -->
-    <string name="recent_task_force_stop_app">Force stop</string>
-    <string name="recents_app_force_stopped">App force stopped</string>
+    <string name="recent_task_force_stop_app">Forzare arresto</string>
+    <string name="recents_app_force_stopped">Arresto forzato dell\'app</string>
     <!-- Edit workspace -->
-    <string name="settings_lock_layout_title">Lock layout</string>
-    <string name="settings_lock_layout_summary">Forbid icons and widgets to be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
+    <string name="settings_lock_layout_title">Blocca il layout</string>
+    <string name="settings_lock_layout_summary">Impedisce di aggiungere, di togliere e di muovere icone e widget nella homescreen</string>
+    <string name="settings_edit_widgets_error">Non é possibile aggiungere widget alla home</string>
     <!-- Hide labels -->
-    <string name="desktop_show_labels_title">Icon label</string>
-    <string name="desktop_show_labels_summary">Show icon labels on homescreen</string>
-    <string name="drawer_show_labels_title">Icon label</string>
-    <string name="drawer_show_labels_summary">Show icon labels in app drawer</string>
+    <string name="desktop_show_labels_title">Testo dell\'icona</string>
+    <string name="desktop_show_labels_summary">Mostra i testi delle icone nella home</string>
+    <string name="drawer_show_labels_title">Testo delle icone</string>
+    <string name="drawer_show_labels_summary">Mostra il testo delle icone nell\'app drawer</string>
     <!-- Home screen -->
-    <string name="settings_title">Settings</string>
-    <string name="home_homescreen_title">Home screen</string>
-    <string name="home_homescreen_summary">Customize your home screen</string>
+    <string name="settings_title">Impostazioni</string>
+    <string name="home_homescreen_title">Schermata iniziale</string>
+    <string name="home_homescreen_summary">Personalizza la schermata iniziale</string>
     <string name="home_drawer_title">App drawer</string>
-    <string name="home_drawer_summary">Customize your app drawer</string>
-    <string name="home_icon_title">Icons</string>
-    <string name="home_icon_summary">Customize your app icons</string>
-    <string name="home_recent_title">Recent</string>
-    <string name="home_recent_summary">Customize your recent overview</string>
-    <string name="home_misc_title">Miscellaneous</string>
-    <string name="home_misc_summary">Discover more miracle</string>
-    <string name="developer_options_title">Developer Options</string>
-    <string name="developer_options_summary">Enable hidden features as your own risk</string>
+    <string name="home_drawer_summary">Personalizza l\'app drawer</string>
+    <string name="home_icon_title">Icone</string>
+    <string name="home_icon_summary">Personalizza le icone delle app</string>
+    <string name="home_recent_title">Recenti</string>
+    <string name="home_recent_summary">Personalizza il menù delle app recenti</string>
+    <string name="home_misc_title">Varie</string>
+    <string name="home_misc_summary">Scopri altri miracoli</string>
+    <string name="developer_options_title">Opzioni sviluppatore</string>
+    <string name="developer_options_summary">Abilita funzioni nascoste a tuo rischio e pericolo</string>
     <!-- Hotseat searchbar -->
-    <string name="label_search">Search</string>
+    <string name="label_search">Cerca</string>
     <string name="label_lens">Google Lens</string>
-    <string name="label_voice_search">Voice search</string>
+    <string name="label_voice_search">Ricerca vocale</string>
     <string name="dock_category">Dock</string>
-    <string name="dock_search_title">Google search bar</string>
-    <string name="dock_search_summary">Show search bar in the bottom dock</string>
-    <string name="dock_theme_title">Themed icons</string>
-    <string name="dock_theme_summary">Use themed icons for search bar</string>
-    <string name="search_radius_title">Corner radius</string>
+    <string name="dock_search_title">Barra di ricerca Google</string>
+    <string name="dock_search_summary">Mostra la barra di ricerca sotto la dock</string>
+    <string name="dock_theme_title">Icone a tema</string>
+    <string name="dock_theme_summary">Le icone della barra di ricerca seguono il tema del sistema</string>
+    <string name="search_radius_title">Raggio degli angoli</string>
     <!-- Recents -->
     <string name="action_lens">Lens</string>
-    <string name="haptic_on_scroll_title">Haptic feedback</string>
-    <string name="haptic_on_scroll_summary">Do haptic feedback when scrolling recent view</string>
-    <string name="recent_show_lens_title">Show Lens</string>
-    <string name="recent_show_lens_summary">When app is available</string>
+    <string name="haptic_on_scroll_title">Feedback aptico</string>
+    <string name="haptic_on_scroll_summary">Restituisce un feedback aptico quando scorri tra le app recenti</string>
+    <string name="recent_show_lens_title">Mostra Lens</string>
+    <string name="recent_show_lens_summary">Quando un app é disponibile</string>
     <!-- Themed icons -->
-    <string name="themed_icons_title">Themed icon</string>
-    <string name="themed_icons_summary">Enable themed icon for Homescreen apps</string>
-    <string name="themed_icons_all_title">Enable for all icons</string>
-    <string name="themed_icons_all_summary">Apply themed icon to both App Drawer &amp; Homescreen</string>
+    <string name="themed_icons_title">Icone a tema</string>
+    <string name="themed_icons_summary">Abilita le icone a tema nella home</string>
+    <string name="themed_icons_all_title">Abilita per tutte le icone</string>
+    <string name="themed_icons_all_summary">Abilita le icone a tema per l\'app drawer e la home</string>
     <!-- Icon pack -->
-    <string name="icon_pack_title">Icon pack</string>
-    <string name="icon_pack_default_label">Default</string>
-    <string name="icon_pack_add">Install more</string>
-    <string name="icon_pack_no_market">There\'s no available app store</string>
+    <string name="icon_pack_title">Pacchetto icone</string>
+    <string name="icon_pack_default_label">Predefinito</string>
+    <string name="icon_pack_add">Installa altri</string>
+    <string name="icon_pack_no_market">Non ci sono app disponibili nello store</string>
     <!-- Folder titles -->
     <!-- Icon size -->
-    <string name="icon_size_title">Icon size</string>
+    <string name="icon_size_title">Dimensione delle icone</string>
     <!-- Font size -->
-    <string name="font_size_title">Font size</string>
+    <string name="font_size_title">Dimensione del font</string>
     <!-- App label lines -->
-    <string name="icon_multi_lines_title">Multi-lines label</string>
-    <string name="icon_multi_lines_summary">Allow icon labels to be displayed in multiple lines</string>
+    <string name="icon_multi_lines_title">Testo su più righe</string>
+    <string name="icon_multi_lines_summary">Permette di mostrare il testo delle icone di più righe</string>
     <!-- Hidden apps -->
-    <string name="hidden_app_title">Hidden apps</string>
-    <string name="hidden_app_summary">Hide apps from the app drawer</string>
+    <string name="hidden_app_title">App nascoste</string>
+    <string name="hidden_app_summary">Nascondi le app dall\'app drawer</string>
+    <!-- Homescreen Statusbar -->
+    <string name="show_statusbar_title">Status Bar</string>
+    <string name="show_statusbar_summary">Show status bar at Home screen</string>
 </resources>
