@@ -53,6 +53,7 @@
     <icon drawable="@drawable/themed_icon_automatag" package="com.fillobotto.mp3tagger" />
     <icon drawable="@drawable/themed_icon_auxio" package="org.oxycblt.auxio" />
     <icon drawable="@drawable/themed_icon_axisnet" package="com.axis.net" />
+    <icon drawable="@drawable/themed_icon_apex_legends" package="com.ea.gp.apexlegendsmobilefps" />
     <icon drawable="@drawable/themed_icon_babbel" package="com.babbel.mobile.android.en" />
     <icon drawable="@drawable/themed_icon_background_eraser" package="com.handycloset.android.eraser" />
     <icon drawable="@drawable/themed_icon_baidu" package="com.baidu.searchbox" />
@@ -987,6 +988,7 @@
     <icon drawable="@drawable/themed_icon_pulsar_plus" package="com.rhmsoft.pulsar.pro" />
     <icon drawable="@drawable/themed_icon_puretuber" package="free.tube.premium.advanced.tuber" />
     <icon drawable="@drawable/themed_icon_pushbullet" package="com.pushbullet.android" />
+    <icon drawable="@drawable/themed_icon_physicswallah" package="xyz.penpencil.physicswala" />
     <icon drawable="@drawable/themed_icon_qingli" package="com.ktls.fileinfo" />
     <icon drawable="@drawable/themed_icon_qiwi" package="ru.mw" />
     <icon drawable="@drawable/themed_icon_qq" package="com.tencent.mobileqq" />
@@ -1100,6 +1102,8 @@
     <icon drawable="@drawable/themed_icon_sync" package="com.laurencedawson.reddit_sync.dev" />
     <icon drawable="@drawable/themed_icon_sync" package="com.laurencedawson.reddit_sync.pro" />
     <icon drawable="@drawable/themed_icon_syncthing" package="com.nutomic.syncthingandroid" />
+    <icon drawable="@drawable/themed_icon_simtoolkit" package="com.android.stk" />
+    <icon drawable="@drawable/themed_icon_subway_surfers" package="com.kiloo.subwaysurf" />
     <icon drawable="@drawable/themed_icon_t12306" package="com.MobileTicket" />
     <icon drawable="@drawable/themed_icon_tagesschau" package="de.tagesschau" />
     <icon drawable="@drawable/themed_icon_taichiyomi" package="eu.kanade.tachiyomi" />
